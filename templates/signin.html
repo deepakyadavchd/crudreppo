@@ -1,0 +1,21 @@
+
+{% extends "master.html"%}
+
+{% block body %}
+<br>
+<center>
+<h2> Welcome to Sign-in page</h2>
+</center>
+<div style="color:red">
+    {{error}}
+</div>
+
+
+<form method="post" id="formid">
+{% csrf_token %}
+Userid <input type="text" name="txtuserid" placeholder="Enter Userid" ><br><br>
+Password <input type="password" name="txtpassword" placeholder="Enter Password"><br><br>
+
+<button type="submit" value="btnvalue" name="btnlogin"> Login </button></div><br>
+</form>
+{% endblock %}

@@ -1,0 +1,27 @@
+{% extends "master.html"%}
+
+{% block body %}
+
+<form method="post"  id="formid"><br>
+    {% csrf_token %}
+    
+        <!-- blank messages // -->
+        <div id="ercolor"><div >{{error}}</div><div >{{errorx}}</div><div >{{error1}}</div>
+        <div >{{errorxz}}</div><div >{{errorv}}</div></div><br>
+    
+        <!-- Form input textboxes -->
+        <div id="ip"><div>Roll-NO <input type="text" placeholder="Enter Roll-NO " name="rtxt"></div><br>
+        <div>Name <input type="text" placeholder="Enter Name" name="ntxt"></div><br>
+        <div>Marks <input type="text" placeholder="Enter Marks" name="mtxt"></div><br>
+        <div> Select-Result <select name="rltxt"><br>
+            <option value="Pass" >Pass</option>
+            <option  value="Fail" >Fail</option>
+        </select></div><br><br>
+        <!-- form create button  -->
+        <div><button type="submit" value="btnvalue" name="createbtn"> Create </button></div><br>
+        <!-- form submission message -->
+        <div id="msssg">{{msg}}</div>
+        <br>
+    </form>
+    
+{% endblock %}

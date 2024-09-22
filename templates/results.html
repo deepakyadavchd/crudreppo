@@ -1,0 +1,67 @@
+{% extends "master.html"%}
+
+{% block body %}
+
+{% load static %}
+
+<div id="allrt">     
+<table align="center" width="500px" border="1px"><br><br>
+  <tr>
+    <th>
+      Roll no
+    </th>
+    <th>
+      Name
+    </th>
+    <th>
+      marks
+    </th>
+    <th>
+      result
+    </th>
+    <th></th>
+    <th></th>
+   
+  </tr>
+{% for qs in queryset %}
+
+<tr>
+  <td>
+    {{ qs.studentrolln}}
+  </td>
+  <td>
+   <a href="../details?rt={{ qs.studentrolln}}"> {{ qs.studentname}} </a>
+  </td>
+  <td>
+    {{ qs.studentmarks}}
+  </td>
+  <td>
+    {{ qs.studentresult}}
+  </td>
+
+  <td>
+    <a href="../delete?rt={{ qs.studentrolln}}">
+    Delete
+    </a>
+  </td>
+  <td>
+     <a href="../edit?rt={{ qs.studentrolln}}">Edit</a>
+  </td>
+
+</tr>
+{% endfor %}
+</table>
+<br><br>
+</div><br>
+
+<form method="post" id="formid" >
+  {% csrf_token %}
+
+  <div>{{min}}</div><br>
+  Roll No <input  type="text" name="inputtxt" placeholder="Enter Your Roll No" required>
+  <button type="submit" name="srchbtn"   value="buttonvalue">Search</button><br>
+  {% endblock %}
+
+
+
+

@@ -1,0 +1,26 @@
+
+{% extends "master2.html"%}
+
+{% block body %}
+
+
+<br>
+<br>
+<form method="POST" id="formid" >
+    {% csrf_token %}
+
+    {{form}}
+    <br>
+    <button type="submit" name="savebtn">Save changes</button>
+  </form>
+  
+
+{% endblock %}
+
+
+
+
+
+
+
+

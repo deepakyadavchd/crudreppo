@@ -1,0 +1,18 @@
+
+{% extends "master.html"%}
+
+{% block body %}
+
+<div id="updateform"><form method="post">
+{% csrf_token %}
+<div>Rollno  <input type="text" name="txtrollno" value="{{qs.studentrolln}}"></div><br>
+<div>NAME <input type="text" name="txtname" value="{{qs.studentname}}"></div><br>
+<div>MARKS <input type="text" name="txtmarks" value="{{qs.studentmarks}}"></div><br>
+<div> SELECT RESULT <select name="rltxt" ><br>
+    <option value="Pass" >Pass</option>
+    <option  value="Fail" >Fail</option>
+</select></div></div><br><br>
+<!-- form create button  -->
+<div><button type="submit" value="btnvalue" name="upbtn"> Update </button></div>
+</form>
+{% endblock %}

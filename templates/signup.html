@@ -1,0 +1,28 @@
+
+
+{% extends "master.html" %}
+{% load static %}
+
+{% block body %}
+<br>
+<center>
+<h2> Welcome to Sign-up </h2>
+</center>
+
+<div id="formid">
+<br>
+
+<form method="post">
+{% csrf_token %}
+Firstname<input type="text" name="txtfname"  placeholder="Enter Firstname" required><br><br>
+Lastname<input type="text" name="txtlname"  placeholder="Enter Lastname" required><br><br>
+Email-id<input type="text" name="txtemail"  placeholder="Enter Email-id" required><br><br>
+Password<input type="password" name="txtpassword"  placeholder="Enter Password" required><br><br>
+Confirm-Password<input type="password" name="txtconfirm"  placeholder="Enter Confirm-Password" required><br><br>
+<button type="submit" value="btnvalue" name="createbtn"> Create</button></div><br>
+
+</form>
+{{msg}}
+
+</div>
+{% endblock %}

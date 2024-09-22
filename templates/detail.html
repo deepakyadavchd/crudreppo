@@ -1,0 +1,42 @@
+{% extends "master.html"%}
+
+{% block body %}
+
+{% load static %}
+
+<table align="center" width="500px" border="1px"><br><br>
+  <tr>
+    <th>
+      Roll no
+    </th>
+    <th>
+      Name
+    </th>
+    <th>
+      marks
+    </th>
+    <th>
+      result
+    </th>
+   
+  </tr>
+{% for qs in queryset %}
+
+<tr>
+  <td>
+    {{ qs.studentrolln}}
+  </td>
+  <td>
+   <a href="../details"> {{ qs.studentname}} </a>
+  </td>
+  <td>
+    {{ qs.studentmarks}}
+  </td>
+  <td>
+    {{ qs.studentresult}}
+  </td>
+
+</tr>
+{% endfor %}
+<br>
+{% endblock %}

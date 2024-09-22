@@ -1,0 +1,132 @@
+
+.topnav {
+    width: 85%;
+    margin: 30px auto;
+  
+    }
+      
+  
+  .topnav a {
+    float: left;
+     border: solid;
+     background-color: blue;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+      }
+  
+  .topnav a:hover {
+    background-color:grey;
+    color: black;
+  }
+  
+  .topnav a.active {
+    color: white;
+  }
+  
+  #formid{
+    width: 65%;
+    border:solid;
+    background-color:cadetblue;
+    border-radius:20px;
+    margin-left: 6cm;
+    margin-top:40px ;
+    text-align: center;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+  
+  }
+  
+  .Srbtn{
+
+
+    text-align: center;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+  
+  }
+
+
+  button{
+    font-size:large;
+    text-align: right;
+  }
+  
+  input{
+    text-align: center;
+    border: solid;
+    font-size:large;
+  
+  }
+  
+  select{
+    font-size:large;
+    font-weight: 250;
+  
+  }
+  
+  #msssg{
+
+    color:darkgreen;
+  }
+
+
+
+
+  #ercolor{
+
+    color: red;
+  
+  
+
+  } 
+
+/* 
+  #ip{
+
+    color: darkred;
+    background-color:crimson;
+    width: auto;
+    border: solid;
+  }
+
+
+#allrt{
+  width: 65%;
+  color:#f2f2f2;
+    border:solid;
+    background-color:cadetblue;
+    border-radius:20px;
+    margin-left: 6cm;
+    margin-top:40px ;
+    text-align: center;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    margin-bottom: 5px;
+  
+ */
+
+
+ #updateform{
+
+   text-align: center;
+    font-size: x-large;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 300;
+    margin-bottom: 5px;
+  
+ }
+
+
+#wel2{
+  color:green;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: x-large;
+  font-weight: 500;
+  text-align: center;
+}
